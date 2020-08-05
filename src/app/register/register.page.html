@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center" color="primary">
+     Hospital Management System
+     </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    <ion-item>
+      <ion-label>Name :</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label type="number">Age :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label type="text">Gender :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label type="number">Contact No :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label type="text">Address :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label type="text">Disease Symptoms :</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+<br/>
+    <ion-button color="primary" (click)="home()" [routerLink]="['/home']">HOME</ion-button>
+    <ion-button color="primary">RESET</ion-button>
+    <ion-button color="primary">SUBMIT</ion-button>
+
+
+  </div>
+</ion-content>
+<ion-footer >
+  <ion-toolbar>
+    <ion-title class="ion-text-center" text-center>copyright@HMS</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,20 +1,25 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title class="ion-text-center" color="primary">
+     Hospital Management System
+     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button color="primary"  shape="round" (click)="register()" [routerLink]="['/register']">REGISTER PATIENT</ion-button>
+   <br/>
+    <ion-button color="primary"  shape="round" (click)="view_details()">VIEW PATIENT DETAILS</ion-button>
+    
+
+
+
   </div>
 </ion-content>
+<ion-footer >
+  <ion-toolbar>
+    <ion-title class="ion-text-center" text-center>copyright@HMS</ion-title>
+  </ion-toolbar>
+</ion-footer>
